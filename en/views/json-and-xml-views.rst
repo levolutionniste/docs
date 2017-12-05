@@ -12,6 +12,9 @@ as data views for the rest of this page.
 
 There are two ways you can generate data views. The first is by using the
 ``_serialize`` key, and the second is by creating normal template files.
+But for the two steps, you MUST modify the routes.php file in config folder by adding this line : 
+$routes->extensions(['json', 'xml', 'ajax']);
+    /* and dow this for all others route definitions as already existing*/
 
 Enabling Data Views in Your Application
 =======================================
